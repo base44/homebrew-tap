@@ -9,26 +9,26 @@
 class Base44 < Formula
   desc "CLI for creating, managing, and deploying Base44 applications"
   homepage "https://github.com/base44/cli"
-  version "0.0.47"
+  version "0.0.48"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/base44/cli/releases/download/v#{version}/base44-darwin-arm64.tar.gz"
-      sha256 "c04be07f7335f3d691642f56aec2ca1f3bb57a8442e8428eda7ac3ff2086e62a"
+      sha256 "7b4d72d4a8f13b123591075a35de0fa940ab24a084ea8d6ecfcde6c4be5f476d"
     else
       url "https://github.com/base44/cli/releases/download/v#{version}/base44-darwin-x64.tar.gz"
-      sha256 "6a823ccf3ad4e23fa6e73eb0c0db4075c8be78b18e74428d50a5b1dde99358bf"
+      sha256 "942df0c6698517bb278f14d8e8d3fda56ef8ea2ba38be778d4a8993854010481"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/base44/cli/releases/download/v#{version}/base44-linux-arm64.tar.gz"
-      sha256 "a94a04629882171765990c5da009c6f12af1db2f8983a97051996393d973ad9c"
+      sha256 "bfc1c883e6657892ce349bc6cbbefb43c42dae7bb03e001cd0bd73ab0578d22d"
     else
       url "https://github.com/base44/cli/releases/download/v#{version}/base44-linux-x64.tar.gz"
-      sha256 "7567c1e1a3647cba5e55bb3f467570c92f80778a9e64165c9032ee7234eb1d6b"
+      sha256 "bf00c85f9998d2e1510568325da04984bc88e42f8f79bad660aac997162cc627"
     end
   end
 
